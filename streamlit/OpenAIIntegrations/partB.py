@@ -151,21 +151,13 @@ def create_embeddings_and_upsert(questions):
     index.upsert(index_name=index_name, vectors=question_embedding_to_upsert, namespace="questions")
     index.upsert(index_name=index_name, vectors=answer_embedding_to_upsert, namespace="answers")
 
-def generate_50_questions_setA():
-    topic = 'Applications of Financial Statement Analysis'
+def generate_50_questions_setA(topic):
     context_data=fetch_snowflake_data(topic)
     print("Snowflake data fetch complete")
     markdown_doc = build_markdown(snowflake_data_row=context_data)
     print("Markdown data generation complete")
     prompt = buildPromptForQuestions_setA(context_data= markdown_doc)
     print("Prompt building done")
-#     question = """You are an exam helper who generates 50 questions along with four options and answer on the content given by user. \n
-#     This should be the format of question: \n 1. Why are projections of future performance important in credit analysis?
-#    A) To determine current stock prices
-#    B) To evaluate a borrower's ability to repay debt
-#    C) To assess management efficiency
-#    D) To compare financial reporting standards
-#    Answer: B) projections of future performance important in credit analysis to evaluate a borrower's ability to repay debt"""
     question = "You are a question bank who generates questions and answers along with brief justifications"
     gpt_questions = generate_openaidata(prompt,question)
     print("GPT questions generation for set A done")
@@ -185,8 +177,6 @@ def generate_50_questions_setA():
     print("JSON data has been stored to:", file_path)
     create_embeddings_and_upsert(questions)
     print("Question and answer embedding creation complete")
-
-generate_50_questions_setA()
 
 
 def buildPromptForQuestions_setB(context_data, pdf_data):
@@ -242,5 +232,15 @@ def generate_50_questions_setB():
 
     print("JSON data has been stored to:", file_path)
 
-generate_50_questions_setB()
 
+
+
+
+def main():
+    topic = 'Applications of Financial Statement Analysis'
+    generate_50_questions_setA(topic=topic)
+    generate_50_questions_setB(topic=topic)
+    print("Stage 2 run successfully")
+
+if __name__ == "__main__":
+    main()
