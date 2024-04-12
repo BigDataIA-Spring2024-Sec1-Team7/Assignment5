@@ -64,13 +64,12 @@ Input PDFs Uploaded via Streamlit: The pipeline retrieves PDF files containing t
 
 
 ## Technologies used
-- Snowflake ![Snowflake](images/snowflake.png)
-- OpenAI ![OpenAI](images/openai.png)
-- Pinecone ![Pinecone](images/pinecone.png)
+Streamlit, Snowflake, OpenAI, Pinecone
+
 
 ## Architecture Diagram
-![data_pipeline_architecture](![assignment5](https://github.com/BigDataIA-Spring2024-Sec1-Team7/Assignment5/assets/113384021/8bc8e2df-cc55-47bb-8ef1-d817424aac1e)
-)
+![data_pipeline_architecture](![assignment_5](https://github.com/BigDataIA-Spring2024-Sec1-Team7/Assignment5/assets/113384021/49580cbf-d92c-43e0-8210-4842803d4f4d)
+
 
 
 ## Pre-requisites
