@@ -175,7 +175,7 @@ your preferred browser.
 | Name | Contribution % | Contribution |
 | --- | --- | --- |
 Asawari Kadam | 33.33% | Part 1 and streamlit |
-Hariharan Sundaram | 33.33%  | Part 2 and streamlit |
-Rutuja Kute | 33.33%  | Part 3 and Part 4 |
+Hariharan Sundaram | 33.33%  | Part 3 and Part 4|
+Rutuja Kute | 33.33%  |  Part 2 and streamlit |
 
 
