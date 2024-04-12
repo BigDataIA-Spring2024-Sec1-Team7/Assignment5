@@ -18,7 +18,7 @@ Overall, the assignment focuses on experimenting with different techniques for g
 
 
 ## Codelab Link
-https://codelabs-preview.appspot.com/?file_id=1c6VB_qFBEqGw-6wcCtZOCc7Rcjyu1rTKkr46DdrcOcI#0
+[https://codelabs-preview.appspot.com/?file_id=1c6VB_qFBEqGw-6wcCtZOCc7Rcjyu1rTKkr46DdrcOcI#0](https://codelabs-preview.appspot.com/?file_id=14qlZ-2gF3lOy6qI_J2EucJKMsOx5OkMx6IVQOowjH_o#0)
 
 
 ## Project Goals
