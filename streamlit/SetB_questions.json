@@ -1,0 +1,72 @@
+[
+    {
+        "question": "What are the key questions that should be addressed in evaluating a company's past financial performance?",
+        "options": [
+            "How did the company perform in the past?\nB) What factors contributed to the company's performance?\nC) Did the company's performance align with its strategy?\nD) How does the company compare to its competitors?"
+        ],
+        "answer": "Answer: A) How did the company perform in the past? with justification: This question helps evaluate the overall financial performance of the company over a specific period of time.\n\n"
+    },
+    {
+        "question": "How can an analyst approach forecasting a company's future net income and cash flow?",
+        "options": [
+            "Analyzing industry trends and market conditions\nB) Using historical financial data\nC) Examining the company's growth strategy\nD) Considering macroeconomic factors"
+        ],
+        "answer": "Answer: A) Analyzing industry trends and market conditions with justification: This approach helps the analyst understand how external factors can impact the company's future financial performance.\n\n"
+    },
+    {
+        "question": "How can financial statement analysis be used to evaluate the credit quality of a potential fixed-income investment?",
+        "options": [
+            "Assessing the company's debt-to-equity ratio\nB) Analyzing the company's liquidity and solvency ratios\nC) Reviewing the company's credit rating\nD) Analyzing the company's historical cash flow"
+        ],
+        "answer": "Answer: B) Analyzing the company's liquidity and solvency ratios with justification: These ratios provide insights into the company's ability to meet its debt obligations and assess its creditworthiness.\n\n"
+    },
+    {
+        "question": "How can financial statement analysis be used to screen for potential equity investments?",
+        "options": [
+            "Analyzing the company's profitability ratios\nB) Reviewing the company's historical stock performance\nC) Assessing the company's market capitalization\nD) Analyzing the company's competitive position"
+        ],
+        "answer": "Answer: A) Analyzing the company's profitability ratios with justification: Profitability ratios help evaluate the company's ability to generate profits and assess its attractiveness as an equity investment.\n\n"
+    },
+    {
+        "question": "How can differences in accounting methods affect financial ratio comparisons between companies?",
+        "options": [
+            "Different accounting methods can distort financial ratios\nB) Different accounting methods can enhance financial ratios\nC) Financial ratios are not affected by accounting methods\nD) Financial ratios can only be compared with companies using similar accounting methods"
+        ],
+        "answer": "Answer: A) Different accounting methods can distort financial ratios with justification: Accounting methods can impact how financial statements are prepared, leading to variations in ratios between companies.\n\n"
+    },
+    {
+        "question": "What are some adjustments analysts make to reported financials to facilitate comparability among companies?",
+        "options": [
+            "Adjusting for differences in accounting methods\nB) Normalizing for one-time expenses\nC) Removing non-recurring income\nD) All of the above"
+        ],
+        "answer": "Answer: D) All of the above with justification: Analysts may make various adjustments to reported financials to ensure comparability among companies by eliminating distortions caused by accounting methods and one-time or non-recurring items.\n\n"
+    },
+    {
+        "question": "Prior to conducting financial statement analysis, what should an analyst explore?",
+        "options": [
+            "The purpose and context of the analysis\nB) The tools used for analysis\nC) The data sources for analysis\nD) The format for reporting analysis results"
+        ],
+        "answer": "Answer: A) The purpose and context of the analysis with justification: Understanding the purpose and context of the analysis is crucial as it guides the analyst's decision-making process and helps identify the key questions that need to be addressed.\n\n"
+    },
+    {
+        "question": "What does the use of financial statement analysis in assessing credit quality involve?",
+        "options": [
+            "Evaluating the company's leverage and stability\nB) Assessing the company's ability to generate cash flow\nC) Analyzing the company's financial ratios\nD) All of the above"
+        ],
+        "answer": "Answer: D) All of the above with justification: Assessing credit quality involves evaluating various factors related to leverage, stability, and cash flow, which can be analyzed using financial statement analysis.\n\n"
+    },
+    {
+        "question": "When conducting financial statement analysis, what factors should an analyst consider?",
+        "options": [
+            "The financial reporting standards used\nB) The purpose and context of the analysis\nC) The need for adjustments to reported financials\nD) All of the above"
+        ],
+        "answer": "Answer: D) All of the above with justification: An analyst should consider the financial reporting standards used, the purpose and context of the analysis, and the need for adjustments to reported financials to ensure accurate and meaningful analysis.\n\n"
+    },
+    {
+        "question": "In what format should conclusions and decisions based on financial statement analysis be communicated?",
+        "options": [
+            "In a written report\nB) In a presentation format\nC) Through visual displays of data\nD) All of the above"
+        ],
+        "answer": "Answer: D) All of the above with justification: Conclusions and decisions based on financial statement analysis can be communicated through written reports, presentations, and visual displays of data, depending on the context and audience."
+    }
+]

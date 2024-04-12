@@ -1,0 +1,72 @@
+[
+    {
+        "question": "What are the key questions to address in evaluating a company's past financial performance?",
+        "options": [
+            "How can an analyst approach forecasting a company's future net income and cash flow?\nB) How can financial statement analysis be used to evaluate the credit quality of a potential fixed-income investment?\nC) How can financial statement analysis be used to screen for potential equity investments?\nD) How can differences in accounting methods affect financial ratio comparisons between companies?"
+        ],
+        "answer": "Answer: D) How can differences in accounting methods affect financial ratio comparisons between companies? Adjustments to reported financials are often necessary when comparing companies that use different accounting methods or assumptions.\n\n"
+    },
+    {
+        "question": "What should an analyst explore before undertaking any financial statement analysis?",
+        "options": [
+            "The purpose and context of the analysis\nB) The key questions that the analysis must address\nC) The data sources required to answer the questions\nD) The conclusions and decisions based on the analysis"
+        ],
+        "answer": "Answer: A) The purpose and context of the analysis. Before conducting any financial statement analysis, an analyst should explore the purpose and context of the analysis to guide further decisions about the approach, tools, data sources, and reporting format.\n\n"
+    },
+    {
+        "question": "Which section of the reading describes the use of financial statement analysis to evaluate a company's past financial performance?",
+        "options": [
+            "Section 2\nB) Section 3\nC) Section 4\nD) Section 5"
+        ],
+        "answer": "Answer: A) Section "
+    },
+    {
+        "question": "How can an analyst project a company's future net income and cash flow?",
+        "options": [
+            "By forecasting industry sales and the company's market share\nB) By evaluating credit-relevant factors including leverage and operational stability\nC) By screening for potential equity investments using financial statement ratios\nD) By making adjustments to reported financial statements to increase accuracy or comparability"
+        ],
+        "answer": "Answer: A) By forecasting industry sales and the company's market share. The projection of a company's future net income and cash flow often begins with a top-down sales forecast in which the analyst forecasts industry sales and the company's market share.\n\n"
+    },
+    {
+        "question": "Which section of the reading presents the use of financial statement analysis in assessing the credit quality of a potential debt investment?",
+        "options": [
+            "Section 2\nB) Section 3\nC) Section 4\nD) Section 5"
+        ],
+        "answer": "Answer: C) Section "
+    },
+    {
+        "question": "What factors are evaluated in credit analysis using financial statement analysis?",
+        "options": [
+            "Differences in accounting methods between companies\nB) The purpose and context of the financial analysis\nC) Tolerance for leverage, operational stability, and margin stability\nD) Adjustments to reported financial statements for accuracy or comparability"
+        ],
+        "answer": "Answer: C) Tolerance for leverage, operational stability, and margin stability. Credit analysis uses financial statement analysis to evaluate credit-relevant factors, including tolerance for leverage, operational stability, and margin stability.\n\n"
+    },
+    {
+        "question": "What are fundamental decisions when using financial statement ratios to screen for potential equity investments?",
+        "options": [
+            "Forecasting industry sales and market share\nB) Comparing companies with different accounting methods\nC) Selecting metrics to use as screens and setting cutoff points\nD) Making adjustments to reported financial statements"
+        ],
+        "answer": "Answer: C) Selecting metrics to use as screens and setting cutoff points. When using financial statement ratios as screens for potential equity investments, fundamental decisions include selecting the metrics to use as screens, setting cutoff points, and determining how many metrics to include.\n\n"
+    },
+    {
+        "question": "Which section of the reading describes analyst adjustments to reported financial statements?",
+        "options": [
+            "Section 2\nB) Section 3\nC) Section 6\nD) Section 7"
+        ],
+        "answer": "Answer: C) Section "
+    },
+    {
+        "question": "What do analyst adjustments to reported financial statements often involve?",
+        "options": [
+            "Forecasting future financial performance\nB) Evaluating credit quality of debt investments\nC) Assessing a company's past financial performance\nD) Comparing companies with different accounting methods"
+        ],
+        "answer": "Answer: D) Comparing companies with different accounting methods. Analyst adjustments to reported financial statements are often necessary when comparing companies that use different accounting methods or assumptions.\n\n"
+    },
+    {
+        "question": "What should analysts have a good understanding of in order to make good investment decisions?",
+        "options": [
+            "The purpose and context of the financial analysis\nB) The industry sales and market share projections\nC) The financial reporting standards in which statements were prepared\nD) The credit-relevant factors for analyzing potential equity investments"
+        ],
+        "answer": "Answer: C) The financial reporting standards in which statements were prepared. Analysts must have a good understanding of the financial reporting standards under which the financial statements were prepared to make accurate investment decisions."
+    }
+]

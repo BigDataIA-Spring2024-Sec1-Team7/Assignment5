@@ -1,25 +1,8 @@
 import streamlit as st
-
+import OpenAIIntegrations.partA as partA
 
 def generate_summary(topic):
-    if topic == 'Applications of Financial Statement Analysis':
-        with open("OpenAIIntegrations/Markdown_note_topic1.txt", "r") as text_file:
-            data = text_file.read()
-        return data
-
-
-    elif topic == 'Analysis of Dividends and Share Repurchases':
-        with open("OpenAIIntegrations/Markdown_note_topic2.txt", "r") as text_file:
-            data = text_file.read()
-        return data
-
-    elif topic == 'Financial Analysis Techniques':
-        with open("OpenAIIntegrations/Markdown_note_topic3.txt", "r") as text_file:
-            data = text_file.read()
-        return data
-
-    else:
-        return "Please select a topic."
+    return partA.generateGPTSummary(topic=topic)
 
 st.title("Get Summary")
 
