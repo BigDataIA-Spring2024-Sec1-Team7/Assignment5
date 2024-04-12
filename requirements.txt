@@ -1,0 +1,10 @@
+openai
+python-dotenv
+pinecone-client
+numpy
+snowflake-connector-python
+langchain
+tiktoken
+PyPDF2
+boto3
+streamlit
