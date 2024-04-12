@@ -171,7 +171,6 @@ def deleteAndCreatePineconeIndex():
 index = pinecone_client.Index(index_name)    
 
 
-
 def stage1_summarization(topic):
     deleteAndCreatePineconeIndex()
     print("Deleted prev pinecone index and created new one")
@@ -209,7 +208,7 @@ def stage1_summarization(topic):
 
 
 def main():
-    topic = 'Financial Analysis Techniques'
+    topic = 'Applications of Financial Statement Analysis'
     stage1_summarization(topic)
     print("Stage 1 run successfully")
 
