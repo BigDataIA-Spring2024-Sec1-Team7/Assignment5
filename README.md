@@ -60,7 +60,13 @@ This assignment aims to investigate the effectiveness of different prompting tec
 
 ## Data Sources
 
-Input PDFs Uploaded via Streamlit: The pipeline retrieves PDF files containing topic outlines, which are uploaded via a Streamlit web application. Users can upload PDF files directly through the Streamlit interface, providing seamless integration with the pipeline. The pipeline is specifically designed to handle PDFs sourced from the CFA Institute website.
+1. Snowflake: Snowflake is the primary data source from which data needs to be fetched. Snowflake is a cloud-based data warehousing platform that allows users to store and analyze large amounts of structured and semi-structured data. In this assignment, Snowflake likely contains the raw data that needs to be summarized and analyzed.
+
+2. OpenAI: OpenAI's GPT model is used for generating questions and answers based on the data fetched from Snowflake. OpenAI provides natural language processing models that can generate human-like text based on given prompts. In this assignment, OpenAI's GPT model is used to generate questions and answers.
+
+3. Sample PDF: A sample PDF is mentioned in Step 2b of the assignment, which is utilized along with the data from Snowflake to create prompts for generating questions and answers using OpenAI GPT. This PDF likely contains additional information or context that can be used to generate relevant prompts.
+
+4. Pinecone: Pinecone is used to store the embeddings of the summarized data, as well as the embeddings of the questions and answers generated using OpenAI GPT. Pinecone is a vector database that enables fast similarity searches and efficient storage and retrieval of vector data. In this assignment, Pinecone is used to store and retrieve embeddings for similarity searches.
 
 
 ## Technologies used
@@ -89,16 +95,38 @@ Before running this project, ensure you have the following prerequisites install
 
 ##### How to run
 1. Create virtual environment and activate it
-2. Change directory into `scripts/dataupload` directory and create a .env file to add the credentials required to connect with snowflake. The required fields are the following
-a. `SNOWFLAKE_USER`, snowflake username
-b. `SNOWFLAKE_PASS`, snowflake password
-c. `SNOWFLAKE_ACC_ID`, snowflake account id
-More details on how to obtain the above parameters can be found [here](https://docs.snowflake.com/en/user-guide/admin-account-identifier). Please refer to [snowflake documentation](https://docs.snowflake.com/en/developer-guide/python-connector/sqlalchemy) for further reference on setup.
-3. Run the code using the command `python snowflake_upload_dev.py` or `python snowflake_upload_prod.py`. The data is uploaded from `scripts/webscraping/data/cfascraping_data.csv`.
+2. create a .env file to add the credentials required to connect with snowflake, Pinecone API Key, OpenAI API Key and AWS S3 bucket credentials. The required fields are the following
+a. PINECONE_API_KEY = Pinecone API Key
+b. OPENAI_API_KEY= OpenAI API Key
+c. SNOWFLAKE_USER= Snowflake user id
+d. SNOWFLAKE_PASSWORD= Snowflake passsword
+e. SNOWFLAKE_ACCOUNT= Snowflake accout id
+f. SNOWFLAKE_WAREHOUSE= Snwoflake Warehouse
+g. SNOWFLAKE_DATABASE= Snowflake Database
+h. SNOWFLAKE_SCHEMA= Snowflake schema
+i. AWS_ACCESS_KEY_ID = AWS Access key
+j. AWS_SECRET_ACCESS_KEY = Aws Secret access key
+k. S3_BUCKET_NAME = S3 bucket name
+
+3. Install Requirements.txt file
+```
+pip install -r Requirements.txt
+```
+
+4. Run partA, partB, partC and partD in the same order
+```
+python partA
+python partB
+python partC
+python partD
+```
+5. After generating and loading vectors, will run streamlit app for frontend
+```
+streamlit run app.py
+```
 
 #### Docker
 
-GROBID is very easy to install and deploy in a Docker container. GROBID is a machine learning library for extracting, parsing and re-structuring raw documents such as PDF into structured XML/TEI encoded documents with a particular focus on technical and scientific publications
 
 ##### How to run
 1. Pull the image from docker HUB
@@ -142,6 +170,12 @@ your preferred browser.
 - Summarization using OpenAI
 - Storage in Pinecone
 
+## Team Information and Contribution
 
+| Name | Contribution % | Contribution |
+| --- | --- | --- |
+Asawari Kadam | 33.33% | Part 1 and streamlit |
+Hariharan Sundaram | 33.33%  | Part 2 and streamlit |
+Rutuja Kute | 33.33%  | Part 3 and Part 4 |
 
 
