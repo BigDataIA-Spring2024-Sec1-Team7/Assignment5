@@ -158,7 +158,7 @@ def deleteAndCreatePineconeIndex():
     # check if index already exists (it shouldn't if this is first time)
     if len(pinecone_client.list_indexes()) > 0:
         pinecone_client.delete_index(name=pinecone_client.list_indexes()[0].name)
-
+    
     # Create index
     pinecone_client.create_index(
         index_name,
@@ -167,21 +167,23 @@ def deleteAndCreatePineconeIndex():
         spec=PodSpec(
         environment="gcp-starter"
     ))
+    print("Deleted prev pinecone index and created new one")
 
 index = pinecone_client.Index(index_name)    
 
-
-def stage1_summarization(topic):
-    deleteAndCreatePineconeIndex()
-    print("Deleted prev pinecone index and created new one")
+def generateGPTSummary(topic) -> str:
     scraped_data_row = fetch_snowflake_data(topic)
-    introduction, learning_outcomes, summary = scraped_data_row
     markdown_doc = build_markdown(snowflake_data_row=scraped_data_row)
     print("Building markdown complete")
     prompt = buildPromptForSummarization(context_data=markdown_doc)
     question ="You are an exam helper who generates detailed notes for future use to answer questions.Below is the provided content by user"
     print("Building prompt complete")
     gpt_summary = generate_openaidata(prompt,question)
+    return gpt_summary
+
+def stage1_summarization(topic):
+    # deleteAndCreatePineconeIndex()
+    gpt_summary = generateGPTSummary(topic=topic)
     #to store markdown doc for selected topic
     file_path = "Markdown_note.txt"
 
@@ -195,20 +197,21 @@ def stage1_summarization(topic):
     print("Data chunking complete")
     embeddings_list = create_embeddings(summary_chunks)
     print("Embedding creation complete")
-    upsert_into_db('doc_summary', summary_chunks, embeddings_list)
+    namespace = ('doc-summary-'+topic).replace(' ', '-')
+    upsert_into_db(namespace, summary_chunks, embeddings_list)
     print("Upsert into DB complete")
+    scraped_data_row = fetch_snowflake_data(topic)
+    introduction, learning_outcomes, summary = scraped_data_row
     # Chunking and embedding LOS data 
     summary_chunks = perform_chunk_data(learning_outcomes)
     print("Chunking complete")
     embeddings_list = create_embeddings(summary_chunks)
     print("Embedding creation complete")
-    upsert_into_db('doc_summary', summary_chunks, embeddings_list)
+    upsert_into_db(namespace, summary_chunks, embeddings_list)
     print("Upsert into DB complete")
-    
-
 
 def main():
-    topic = 'Applications of Financial Statement Analysis'
+    topic = 'Financial Analysis Techniques'
     stage1_summarization(topic)
     print("Stage 1 run successfully")
 

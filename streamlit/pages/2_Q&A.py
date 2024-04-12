@@ -11,16 +11,22 @@ def get_answer(question):
 
 def question_answer_page():
     st.title("Ask Questions")
+    # Dropdown for topic
+    topic = st.selectbox("Select a topic:", [
+        'Applications of Financial Statement Analysis',
+        'Analysis of Dividends and Share Repurchases',
+        'Financial Analysis Techniques'
+    ])
     question = st.text_input("Type your question here:")
     if st.button("Approach1 Answer"):
         if question:
-            answer = partC.getAnswerForQuestion(question)
+            answer = partC.getAnswerForQuestion(question=question, topic=topic)
             st.write(answer)
         else:
             st.write("Please type a question first.")
     if st.button("Approach2 Answer"):
         if question:
-            answer = partD.getAnswerForQuestion(question)
+            answer = partD.getAnswerForQuestion(question=question, topic=topic)
             st.write(answer)
         else:
             st.write("Please type a question first.")
