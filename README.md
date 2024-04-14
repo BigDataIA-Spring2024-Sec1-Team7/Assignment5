@@ -1,5 +1,12 @@
 # Assignment5
 
+## Youtube Demo Link
+
+https://www.youtube.com/watch?v=6RJcIlAGELw&ab_channel=HariharanSundaram
+
+## Codelab Link
+[https://codelabs-preview.appspot.com/?file_id=1c6VB_qFBEqGw-6wcCtZOCc7Rcjyu1rTKkr46DdrcOcI#0](https://codelabs-preview.appspot.com/?file_id=14qlZ-2gF3lOy6qI_J2EucJKMsOx5OkMx6IVQOowjH_o#0)
+
 ## Problem Statement
 
 In this assignment, the primary goal is to investigate various prompting techniques to generate and analyze questions and answers. The process involves utilizing data retrieved from Snowflake, summarizing it using OpenAI, and storing the summarized data in Pinecone, an embedding database.
@@ -13,12 +20,6 @@ In this assignment, the primary goal is to investigate various prompting techniq
 4. Storage in Pinecone: The summarized data, along with any associated metadata, is stored in Pinecone. Pinecone is utilized for its efficient storage and retrieval of embeddings, which are high-dimensional representations of the summarized data.
 
 Overall, the assignment focuses on experimenting with different techniques for generating questions and answers, leveraging data from Snowflake, summarizing it using OpenAI, and storing the summarized data in Pinecone. The ultimate objective is to evaluate the effectiveness of these prompting techniques and their impact on question-answer generation and analysis.
-
-
-
-
-## Codelab Link
-[https://codelabs-preview.appspot.com/?file_id=1c6VB_qFBEqGw-6wcCtZOCc7Rcjyu1rTKkr46DdrcOcI#0](https://codelabs-preview.appspot.com/?file_id=14qlZ-2gF3lOy6qI_J2EucJKMsOx5OkMx6IVQOowjH_o#0)
 
 
 ## Project Goals
